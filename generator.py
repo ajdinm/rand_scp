@@ -9,14 +9,14 @@ if(len(sys.argv) < 3):
 
 m = int(sys.argv[1]) # number of contraints
 n = int(sys.argv[2]) # number of variables
-max_cover_coefficient = 1 
+max_cover_coefficient = 0.5
 
 covered = dict()
 
 def get_min_subset_size():
-    return 4;
+    return 1
 def get_max_subset_size():
-    return n * max_cover_coefficient;
+    return  int(n * max_cover_coefficient)
 
 
 # print problem size
